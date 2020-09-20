@@ -9,12 +9,9 @@ def key_for_min_value(name_hash)
     nil
   else 
     name_hash.collect {|key, value|
-      if instance 
-        retval = key
-        instance = false 
-      end
       if value < smallest
         retval = key
+        smallest = value
       end
     }
   end
