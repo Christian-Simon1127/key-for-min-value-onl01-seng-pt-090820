@@ -4,11 +4,12 @@
 def key_for_min_value(name_hash)
   smallest = 0
   retval = nil
-  name_hash.each {|key, value|
-    if value < smallest
-      retval = key
-      binding.pry
-    end
-  }
+  if name_hash.empty?
+    name_hash.each {|key, value|
+      if value < smallest
+        retval = key
+        binding.pry
+      end
+    }
   retval
 end
