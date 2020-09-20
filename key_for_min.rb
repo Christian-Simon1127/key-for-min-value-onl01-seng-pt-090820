@@ -7,6 +7,7 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     nil
   else 
+    retval = 12
     name_hash.each {|key, value|
       if value < smallest
         retval = key
