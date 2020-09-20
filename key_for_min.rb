@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   else 
     name_hash.collect {|key, value|
       if value < smallest
-        retval = value
+        retval = key
       end
     }
   end
