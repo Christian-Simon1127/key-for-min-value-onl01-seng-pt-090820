@@ -9,5 +9,5 @@ def key_for_min_value(name_hash)
       retval = key
     end
   }
-  smallest
+  retval
 end
