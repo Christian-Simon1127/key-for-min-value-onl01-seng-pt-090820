@@ -4,10 +4,15 @@
 def key_for_min_value(name_hash)
   smallest = 1000000
   retval = nil
+  instance = true
   if name_hash.empty?
     nil
   else 
     name_hash.collect {|key, value|
+      if instance 
+        retval = key
+        instance = false 
+      end
       if value < smallest
         retval = key
       end
