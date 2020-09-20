@@ -3,10 +3,10 @@
 
 def key_for_min_value(name_hash)
   smallest = 0
-  
+  retval = :eee
   name_hash.each {|key, value|
     if value < smallest
-      smallest = key
+      retval = key
     end
   }
   smallest
